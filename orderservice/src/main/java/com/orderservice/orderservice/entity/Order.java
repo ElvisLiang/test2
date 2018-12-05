@@ -4,7 +4,7 @@ public class Order {
     private int id;
     private int pid;
     private int num;
-    private int productname;
+    private String productname;
     private double prices;
     private String username;
 
@@ -32,11 +32,11 @@ public class Order {
         this.num = num;
     }
 
-    public int getProductname() {
+    public String getProductname() {
         return productname;
     }
 
-    public void setProductname(int productname) {
+    public void setProductname(String productname) {
         this.productname = productname;
     }
 

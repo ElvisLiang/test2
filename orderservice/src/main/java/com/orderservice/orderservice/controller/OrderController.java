@@ -1,5 +1,6 @@
 package com.orderservice.orderservice.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.orderservice.orderservice.entity.Order;
 import com.orderservice.orderservice.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,8 @@ public class OrderController {
     @GetMapping("/getOrder")
     public Order getOrder(){
        return orderService.getOrder();
-
     }
+
+
+
 }
